@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_hisurveystats_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="folder_not_exists">Error: Folder /tmp does not exist. Please create it first!</label>
+			<label index="no_permission">Error: Folder /tmp does not exist or is not writeable!</label>
+			<label index="total_votes">Total votes</label>
+			<label index="votes">votes</label>
+			<label index="grade">grade</label>
+			<label index="overall_grade">Overall grade</label>
+			<label index="average">Average</label>
+			<label index="of">of</label>
+			<label index="loading">Loading data...</label>
+			<label index="no">No</label>
+			<label index="yes">Yes</label>
+			<label index="untrue">Untrue</label>
+			<label index="true">True</label>
+			<label index="overview">Overview</label>
+			<label index="total">Total</label>
+			<label index="previous">previous</label>
+			<label index="next">next</label>
+			<label index="results">results</label>
+			<label index="term">Term</label>
+			<label index="frequency">Frequency</label>
+			<label index="user_input">User input</label>
+			<label index="number_of_comments">Number of comments</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="folder_not_exists">Fehler: Der Ornder /tmp exisitiert nicht. Bitte zuerst anlegen!</label>
+			<label index="no_permission">Fehler: Der Ornder /tmp exisitiert nicht oder hat keine Schreibrechte!</label>
+			<label index="total_votes">Anzahl Teilnehmer</label>
+			<label index="votes">Stimmen</label>
+			<label index="grade">Note</label>
+			<label index="overall_grade">Gesamtnote</label>
+			<label index="average">Schnitt</label>
+			<label index="of">von</label>
+			<label index="loading">Daten werden geladen...</label>
+			<label index="no">Nein</label>
+			<label index="yes">Ja</label>
+			<label index="untrue">Falsch</label>
+			<label index="true">Richtig</label>
+			<label index="overview">Zusammenfassung</label>
+			<label index="total">Gesamt</label>
+			<label index="previous">zurück</label>
+			<label index="next">weiter</label>
+			<label index="results">Ergebnisse</label>
+			<label index="term">Begriff</label>
+			<label index="frequency">Häufigkeit</label>
+			<label index="user_input">Benutzereingaben</label>
+			<label index="number_of_comments">Anzahl Kommentare</label>
+		</languageKey>
+	</data>
+</T3locallang>

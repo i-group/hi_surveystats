@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+<meta type="array">
+	<type>flexform</type>
+	<description>Language labels for flexform fields belonging to extension 'hi_booking_scheduler'</description>
+</meta>
+<data type="array">
+	<languageKey index="default" type="array">
+		<label index="color_general">General</label>
+		<label index="advanced_view">Advanced view</label>
+		<label index="summary">Show summary of all numeric matrix questions</label>
+		<label index="comments_per_page">Comments per page</label>
+		<label index="color_grades">Activate color grades</label>
+		<label index="max_grade">Maximum grade</label>
+		<label index="color_bar">Colors bar</label>
+		<label index="color_pie">Colors pie</label>
+		<label index="bgcolor">Background color</label>
+		<label index="gridcolor">Grid color</label>
+		<label index="axiscolor">Axis color</label>
+		<label index="barchoicecolor">Bar color (choice)</label>
+		<label index="barmatrixcolor">Bar color (matrix)</label>
+		<label index="pie1color">Pie color (first)</label>
+		<label index="pie2color">Pie color (second)</label>
+		<label index="barwidth">Bar width (pixel)</label>
+		<label index="labelmaxlength">Maximum length for label text</label>
+		<label index="labellinelength">Line length for label text</label>
+		<label index="tooltiplinelength">Line length for tooltip text</label>
+	</languageKey>
+	<languageKey index="de" type="array">
+		<label index="color_general">Allgemein</label>
+		<label index="advanced_view">Erweiterte Ansicht</label>
+		<label index="summary">Zusammenfassung aller numerischen Matrix-Fragen anzeigen</label>
+		<label index="comments_per_page">Kommentare pro Seite</label>
+		<label index="color_grades">Notenbalken einfärben</label>
+		<label index="max_grade">Höchstnote</label>
+		<label index="color_bar">Farben Balkendiagramm</label>
+		<label index="color_pie">Farben Kuchendiagramm</label>
+		<label index="bgcolor">Hintergrundfarbe</label>
+		<label index="gridcolor">Gitterfarbe (grid)</label>
+		<label index="axiscolor">Achsenfarbe</label>
+		<label index="barchoicecolor">Balkenfarbe (Auswahl)</label>
+		<label index="barmatrixcolor">Balkenfarbe (Matrix)</label>
+		<label index="pie1color">Farbe Kuchendiagramm 1</label>
+		<label index="pie2color">Farbe Kuchendiagramm 2</label>
+		<label index="barwidth">Balkenbreite (Pixel)</label>
+		<label index="labelmaxlength">Maximale Länge des Beschriftungstextes</label>
+		<label index="labellinelength">Zeilen-Länge für den Beschriftungstext</label>
+		<label index="tooltiplinelength">Zeilen-Länge für den Tooltip Text</label>
+	</languageKey>
+</data>
+</T3locallang>

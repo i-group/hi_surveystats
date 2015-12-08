@@ -1,0 +1,103 @@
+a:2:{s:4:"meta";a:3:{s:5:"title";s:26:"Survey stats documentation";s:5:"descr";s:0:"";s:7:"options";a:2:{s:10:"usageCount";N;s:19:"includeCodeAbstract";N;}}s:5:"files";a:1:{s:14:"MD5_094253466e";a:4:{s:8:"filename";s:34:"pi1/class.tx_hisurveystats_pi1.php";s:8:"filesize";i:30411;s:6:"header";a:5:{s:4:"text";s:60:"
+
+Plugin 'Survey stats' for the 'hi_surveystats' extension.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:50:"@author	Andreas Kraemer <a.kraemer@horn-verlag.de>";i:1;s:14:"@package	TYPO3";i:2;s:28:"@subpackage	tx_hisurveystats";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:42:"Andreas Kraemer <a.kraemer@horn-verlag.de>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:17:"tx_hisurveystats ";}}}s:3:"DAT";a:21:{i:1;a:8:{s:6:"header";s:49:"class tx_hisurveystats_pi1 extends tslib_pibase {";s:5:"class";i:1;s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:5:{s:4:"text";s:60:"
+
+Plugin 'Survey stats' for the 'hi_surveystats' extension.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:50:"@author	Andreas Kraemer <a.kraemer@horn-verlag.de>";i:1;s:14:"@package	TYPO3";i:2;s:28:"@subpackage	tx_hisurveystats";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:42:"Andreas Kraemer <a.kraemer@horn-verlag.de>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:17:"tx_hisurveystats ";}}}s:7:"content";s:0:"";s:12:"content_size";i:1206;s:13:"content_lines";i:22;s:6:"atLine";i:66;}i:3;a:7:{s:6:"header";s:32:"function main($content, $conf) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:32:"
+
+The main method of the PlugIn
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:28:"$content: The PlugIn content";}i:1;a:2:{i:0;s:5:"array";i:1;s:31:"$conf: The PlugIn configuration";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:44:"The content that is displayed on the website";}}s:7:"content";s:0:"";s:12:"content_size";i:5312;s:13:"content_lines";i:147;s:6:"atLine";i:96;}i:5;a:7:{s:6:"header";s:60:"function addChoice($tx_ncpbsurveyfesimplestats_item, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:509:"
+
+Auswahl - Fragen als Balkendiagramm (Bar) darstellen.
+Fuer jedes Diagramm wird eine PHP-Datei erzeugt, welche den Input fuer das Diagramm generiert.
+Diese Funktion erzeugt den PHP-Code fuer die einzelnen Balken (Anzahl Stimmen + Prozent vom Gesamten).
+In weiteren Dateien wird diese Code dann in die vollstaendige PHP-Datei eingefuegt, das Javascript, welches
+auf die PHP-Datei verweist, wird generiert und das HTML (Ueberschrift + div) wird erzeugt. In das div wird
+per Javascript dann der Inhalt geladen.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:4:"item";i:1;s:83:"$tx_ncpbsurveyfesimplestats_item: Objekt der Klasse tx_ncpbsurveyfesimplestats_item";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:1371;s:13:"content_lines";i:46;s:6:"atLine";i:256;}i:7;a:7:{s:6:"header";s:63:"function addTrueFalse($tx_ncpbsurveyfesimplestats_item, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:531:"
+
+Wahr/Falsch bzw. Ja/Nein - Fragen als Kuchendiagramm (Pie) darstellen.
+Fuer jedes Diagramm wird eine PHP-Datei erzeugt, welche den Input fuer das Diagramm generiert.
+Diese Funktion erzeugt den PHP-Code fuer die einzelnen Kuchenstuecke (Name der Antwort und Anzahl Stimmen).
+In weiteren Dateien wird diese Code dann in die vollstaendige PHP-Datei eingefuegt, das Javascript, welches
+auf die PHP-Datei verweist, wird generiert und das HTML (Ueberschrift + div) wird erzeugt. In das div wird
+per Javascript dann der Inhalt geladen.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:4:"item";i:1;s:83:"$tx_ncpbsurveyfesimplestats_item: Objekt der Klasse tx_ncpbsurveyfesimplestats_item";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:720;s:13:"content_lines";i:23;s:6:"atLine";i:315;}i:9;a:7:{s:6:"header";s:67:"function addMatrixNumeric($tx_ncpbsurveyfesimplestats_item, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:512:"
+
+Numerische Matrizen als Balendiagramm (Bar) darstellen.
+Fuer jedes Diagramm wird eine PHP-Datei erzeugt, welche den Input fuer das Diagramm generiert.
+Diese Funktion erzeugt den PHP-Code fuer die einzelnen Balken (Durchschnittsnote der einzelnen Fragen).
+In weiteren Dateien wird diese Code dann in die vollstaendige PHP-Datei eingefuegt, das Javascript, welches
+auf die PHP-Datei verweist, wird generiert und das HTML (Ueberschrift + div) wird erzeugt. In das div wird
+per Javascript dann der Inhalt geladen.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:4:"item";i:1;s:83:"$tx_ncpbsurveyfesimplestats_item: Objekt der Klasse tx_ncpbsurveyfesimplestats_item";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:3124;s:13:"content_lines";i:100;s:6:"atLine";i:351;}i:11;a:7:{s:6:"header";s:35:"function addComment($title, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:135:"
+
+Antworten der Kommentar-Felder auslesen und ausgeben.
+Zur Uebersichtlichkeit die Kommentare per jQuery auf
+mehrere Seiten verteilen.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:23:"$title: Titel der Frage";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:842;s:13:"content_lines";i:35;s:6:"atLine";i:461;}i:13;a:7:{s:6:"header";s:60:"function addMatrix($tx_ncpbsurveyfesimplestats_item, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:88:"
+
+Muss noch implementiert werden.
+Muesste wohl in mehreren Diagrammen angezeigt werden.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:4:"item";i:1;s:83:"$tx_ncpbsurveyfesimplestats_item: Objekt der Klasse tx_ncpbsurveyfesimplestats_item";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:62;s:13:"content_lines";i:4;s:6:"atLine";i:505;}i:15;a:7:{s:6:"header";s:65:"function addMatrixInput($tx_ncpbsurveyfesimplestats_item, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:88:"
+
+Muss noch implementiert werden.
+Muesste wohl in mehreren Diagrammen angezeigt werden.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:4:"item";i:1;s:83:"$tx_ncpbsurveyfesimplestats_item: Objekt der Klasse tx_ncpbsurveyfesimplestats_item";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:62;s:13:"content_lines";i:4;s:6:"atLine";i:518;}i:17;a:7:{s:6:"header";s:35:"function generateMatrixOverview() {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:237:"
+
+Uebersicht mit allen Matrizenfragen (numerisch) als Balkendiagramm erstellen.
+Nimmt als Parameter die nach und nach erzeugte Klassenvariable matrixOverview.
+Nummer des Diagramms ist 0, um nicht in Konflikt mit einem anderen zu kommen.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:1128;s:13:"content_lines";i:39;s:6:"atLine";i:530;}i:19;a:7:{s:6:"header";s:78:"function generateBarChart($filecontent, $labels_array, $y_label, $max, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:127:"
+
+Ein Balendiagramm (Bar) generieren.
+Mithilfe des uebergebenen PHP-Codes wird der komplette Code fuer die PHP-Datei erstellt.
+";s:5:"param";a:5:{i:0;a:2:{i:0;s:6:"string";i:1;s:52:"$filecontent: Generierter PHP-Code fuer das Diagramm";}i:1;a:2:{i:0;s:6:"string";i:1;s:39:"$y_label: Beschriftung fuer die Y-Achse";}i:2;a:2:{i:0;s:6:"string";i:1;s:94:"$labels_array: PHP-Code fuer die Erzeugung eines Array mit den Beschriftungen fuer die X-Achse";}i:3;a:2:{i:0;s:7:"integer";i:1;s:34:"$max: Hoechstwert fuer die Y-Achse";}i:4;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:739;s:13:"content_lines";i:32;s:6:"atLine";i:581;}i:21;a:7:{s:6:"header";s:47:"function generatePieChart($filecontent, $key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:128:"
+
+Ein Kuchendiagramm (Pie) generieren.
+Mithilfe des uebergebenen PHP-Codes wird der komplette Code fuer die PHP-Datei erstellt.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:52:"$filecontent: Generierter PHP-Code fuer das Diagramm";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:430;s:13:"content_lines";i:18;s:6:"atLine";i:622;}i:23;a:7:{s:6:"header";s:43:"function generateDataFile($key, $content) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:76:"
+
+Ein PHP-Datei erzeugen, welche den JSON-Code fuer ein Diagramm generiert.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}i:1;a:2:{i:0;s:6:"string";i:1;s:28:"$content: PHP-Code der Datei";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:340;s:13:"content_lines";i:15;s:6:"atLine";i:648;}i:25;a:7:{s:6:"header";s:62:"function generateHeaderJS($key, $width = 500, $height = 300) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:263:"
+
+Generiert das Javascript fuer den Header.
+Dieses Javascript definiert die id des HTML-Elements, in welches
+das Diagramm eingefuegt wird. Zudem wird die Breite und Hoehe des
+Diagramms, die zugehoerige PHP-Datei sowie die Beschriftung des
+Ladebalkens festgelegt.
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}i:1;a:2:{i:0;s:7:"integer";i:1;s:28:"$width: Breite des Diagramms";}i:2;a:2:{i:0;s:7:"integer";i:1;s:28:"$height: Hoehe des Diagramms";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:380;s:13:"content_lines";i:12;s:6:"atLine";i:676;}i:27;a:7:{s:6:"header";s:76:"function generateHTML($title, $key, $overallAverage = '', $infoTable = '') {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:133:"
+
+Generiert das HTML.
+Das HTML besteht aus einer Ueberschrift (H1) und dem div, in
+welches das erzeugte Programm hineingeladen wird.
+";s:5:"param";a:4:{i:0;a:2:{i:0;s:6:"string";i:1;s:27:"$title: Titel des Diagramms";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}i:2;a:2:{i:0;s:5:"float";i:1;s:53:"$overallAverage: Gesamtdurchschnitt dieser Auswertung";}i:3;a:2:{i:0;s:6:"string";i:1;s:65:"$infoTable: Info-Tabelle mit Aufschluesselung der einzelnen Werte";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:266;s:13:"content_lines";i:10;s:6:"atLine";i:700;}i:29;a:7:{s:6:"header";s:24:"function getStep($max) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:65:"
+
+Berechnet die Schritte auf der Y-Achse anhand des Maximalwerts
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"integer";i:1;s:33:"$max: Maximalwert auf der Y-Achse";}}s:6:"return";a:2:{i:0;s:7:"integer";i:1;s:48:"Wert fuer die einzelnen Schritte auf der Y-Achse";}}s:7:"content";s:0:"";s:12:"content_size";i:178;s:13:"content_lines";i:8;s:6:"atLine";i:717;}i:31;a:7:{s:6:"header";s:24:"function utf8($string) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:142:"
+
+Die Diagramme erwarten Strings in utf-8.
+Diese Funktion schreit Strings in utf-8 um, falls die Installation
+nicht bereits auf utf-8 laueft.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:45:"$string: String der umgeschrieben werden soll";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"Umgeschriebener utf-8 String";}}s:7:"content";s:0:"";s:12:"content_size";i:100;s:13:"content_lines";i:5;s:6:"atLine";i:734;}i:33;a:7:{s:6:"header";s:35:"function shortenBarLabel($string) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:137:"
+
+Die Breite von Balken wurde auf ca. 100 Pixel gesetzt.
+Falls die Beschriftungen zu lang sind, werden sie mit dieser Funktion
+gekuerzt.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:40:"$string: String der gekuerzt werden soll";}i:1;a:2:{i:0;s:7:"integer";i:1;s:72:"$length: Der String soll nach dieser Anzahl Zeichen abgeschnitten werden";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:17:"Gekuerzter String";}}s:7:"content";s:0:"";s:12:"content_size";i:39;s:13:"content_lines";i:4;s:6:"atLine";i:749;}i:35;a:7:{s:6:"header";s:32:"function addPaginationJS($key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:99:"
+
+Generiert das benoetigte Javascript um den Kommentaren
+per jQuery eine Navigation hinzuzufuegen.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:34:"Javascript fuer jQuery paginataion";}}s:7:"content";s:0:"";s:12:"content_size";i:622;s:13:"content_lines";i:19;s:6:"atLine";i:761;}i:37;a:7:{s:6:"header";s:29:"function customAnswer($key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:58:"
+
+Prueft, ob zu der Frage eigene Antworten moeglich sind.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:7:"boolean";i:1;s:43:"0/1 Zusaetzliche Antwort erlaubt oder nicht";}}s:7:"content";s:0:"";s:12:"content_size";i:239;s:13:"content_lines";i:10;s:6:"atLine";i:787;}i:39;a:4:{s:6:"header";s:33:"function getCustomAnswers($key) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:120:"
+
+Fuer Fragen mit zusaetzlichem Eingabefeld erstellt diese
+Funktion eine Tabelle, in der die Begriffe aufgelistet sind.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"integer";i:1;s:19:"$key: UID der Frage";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:43:"Tabelle mit Begriffen und deren Haeufigkeit";}}s:6:"atLine";i:805;}i:41;a:7:{s:6:"header";s:29:"function getColor($average) {";s:11:"parentClass";s:20:"tx_hisurveystats_pi1";s:4:"cDat";a:3:{s:4:"text";s:100:"
+
+Berechnet zu einer Note eine bestimmte Farbe,
+damit die Unterschiede besser hervorgehoben werden.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"integer";i:1;s:58:"$average: Note, anhand der die Farbe berechnet werden soll";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"Hex-Farbwert";}}s:7:"content";s:0:"";s:12:"content_size";i:1517;s:13:"content_lines";i:55;s:6:"atLine";i:846;}}}}}
